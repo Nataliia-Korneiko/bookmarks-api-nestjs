@@ -63,7 +63,7 @@ export class AuthService {
     email: string,
   ): Promise<{ access_token: string }> {
     const payload = {
-      sub: userId,
+      sub: userId, // id
       email,
     };
 
